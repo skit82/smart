@@ -1,0 +1,260 @@
+.page-header {
+  min-height: 878px;
+  background: url("../img/circuit-desktop@1x.png") calc(50% + 440px) 258px no-repeat,
+  url("../img/trangles-top.svg") calc(50% + 9px) no-repeat,
+  url("../img/bg-desktop@1x.png") center no-repeat, #1b2d37;
+  overflow: hidden;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    min-height: 878px;
+    background: url("../img/circuit-desktop@2x.png") calc(50% + 440px) 258px no-repeat,
+    url("../img/trangles-top.svg") calc(50% + 9px) no-repeat,
+    url("../img/bg-desktop@2x.png") center no-repeat, #1b2d37;
+    background-size: 705px 515px, auto, cover;
+  }
+}
+
+.page-header__wrapper {
+  max-width: 1441px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-header__top {
+  padding-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  // height: 52px;
+  height: 76px;
+}
+
+.page-header__logo {
+  width: 202px;
+  height: 52px;
+  margin-bottom: 15px;
+}
+
+.page-header__footer {
+  padding-top: 230px;
+}
+
+.page-header__footer h2 {
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  font-family: $font-family;
+  font-size: $font-size--h2;
+  font-weight: 700;
+  line-height: $font-size--h2 + 14px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.page-header__footer {
+  position: relative;
+  width: 55%;
+  // width: calc(25% + 215px);
+}
+
+.page-header__footer p {
+  position: relative;
+  margin: 0;
+  margin-bottom: 37px;
+  padding-left: 94px;
+  font-family: $font-family-mono;
+  font-weight: 400;
+  font-size: $font-size--h3;
+  line-height: $font-size--h3 + 12px;
+  color: $white;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background: #ffffff;
+    left: 0;
+    top: 17px;
+  }
+}
+
+.page-header__footer-link {
+  display: block;
+  font-family: $font-family;
+  font-weight: bold;
+  font-size: $font-size;
+  line-height: $font-size + 3;
+  text-align: center;
+  margin-left: 98px;
+  padding: 18px 0;
+  background-color: $main-color;
+  width: 407px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: $white;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.page-header__footer-scroll {
+  display: inline-block;
+  vertical-align: middle;
+  transform: rotate(-90deg);
+  margin-left: -34px;
+  margin-top: 132px;
+  font-family: $font-family-mono;
+  font-weight: 400;
+  font-size: $font-size--middle;
+  line-height: $font-size--middle + 2;
+  color: $white;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.page-header__footer-text {
+  &--two {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .page-header {
+    min-height: 686px;
+    background: url("../img/circuit-tablet@1x.png") calc(100% + 0px) 114px no-repeat, url("../img/trangles-top-tablet.svg") calc(100%) 0 no-repeat, url("../img/bg-tablet@1x.png") center no-repeat, #1b2d37;
+    background-size: 465px, auto, cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      min-height: 686px;
+      background: url("../img/circuit-tablet@2x.png") calc(100% + 0px) 114px no-repeat, url("../img/trangles-top-tablet.svg") calc(100%) 0 no-repeat, url("../img/bg-tablet@2x.png") center no-repeat, #1b2d37;
+      background-size: 260px 340px, auto, cover;
+    }
+  }
+
+  .page-header__footer img {
+    width: 465px;
+    height: 340px;
+  }
+
+  .page-header__wrapper {
+    width: auto;
+    padding: 0 25px;
+  }
+
+  .page-header__top {
+    padding-top: 20px;
+  }
+
+  .page-header__footer {
+    padding-top: 116px;
+    margin-left: 56px;
+    width: calc(25% + 215px);
+  }
+
+  .page-header__footer h2 {
+    font-size: $font-size--h2 - 20px;
+    line-height: $font-size--h2 - 10px;
+    margin-bottom: 32px;
+  }
+
+  .page-header__footer p {
+    padding-left: 60px;
+    font-size: $font-size + 2px;
+    line-height: $font-size + 12px;
+
+    &::before {
+      width: 33px;
+      left: 11px;
+      top: 13px;
+    }
+  }
+
+  .page-header__footer-link {
+    margin-left: 60px;
+    width: 379px;
+  }
+
+  .page-header__button {
+    display: none;
+  }
+
+  .page-header__footer-scroll {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    min-height: 647px;
+    background: url("../img/circuit-mobile@1x.png") calc(100% + 5px) 90px no-repeat, url("../img/trangles-top-mobile.svg") calc(100%) -3px no-repeat, url("../img/bg-mobile@1x.png") center no-repeat, #1b2d37;
+    background-size: 301px, auto, cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      min-height: 647px;
+      background: url("../img/circuit-mobile@2x.png") calc(100% + 5px) 90px no-repeat, url("../img/trangles-top-mobile.svg") calc(100%) -3px no-repeat, url("../img/bg-mobile@2x.png") center no-repeat, #1b2d37;
+      background-size: 301px 220px, auto, cover;
+    }
+  }
+
+  .page-header__wrapper {
+    padding: 0px 15px;
+  }
+
+  .page-header__top {
+    padding-top: 17px;
+    min-height: 71px;
+  }
+
+  .page-header__logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .page-header__footer {
+    padding-top: 207px;
+    margin-left: 0;
+  }
+
+  .page-header__footer h2 {
+    margin-bottom: 30px;
+    font-size: $font-size--h3 + 18px;
+    line-height: $font-size--h3 + 25px;
+  }
+
+  .page-header__footer p {
+    padding-left: 50px;
+    font-size: $font-size;
+    line-height: $font-size + 9px;
+
+    &::before {
+      width: 33px;
+      left: 3px;
+      top: 18px;
+    }
+  }
+
+  .page-header__footer-link {
+    margin-left: 0;
+    margin-right: auto;
+    width: 287px;
+  }
+
+  .page-header__footer-text {
+    &--one {
+      display: none;
+    }
+
+    &--two {
+      display: block;
+    }
+  }
+}

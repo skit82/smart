@@ -1,0 +1,150 @@
+.advantages {
+  position: relative;
+  padding-top: 110px;
+}
+
+.advantages__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  min-height: 299px;
+  max-width: 570px;
+  border: 1px solid #ebebeb;
+  border-left: 3px solid #00b2ff;
+  margin-bottom: 30px;
+  padding-left: 45px;
+  padding-right: 43px;
+  padding-top: 35px;
+  background-color: $white;
+
+  &:hover {
+    background-color: $main-color;
+    border-color: $main-color;
+  }
+}
+
+.advantages h3 {
+  font-family: $font-family;
+  font-size: $font-size + 8;
+  line-height: $font-size + 18;
+  font-weight: 400;
+  color: $main-color;
+  margin: 0;
+  margin-top: 23px;
+}
+
+.advantages p {
+  font-family: $font-family-mono;
+  font-size: $font-size;
+  font-weight: 400;
+  line-height: $font-size + 6;
+  color: #666666;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: auto;
+  padding-bottom: 20px;
+}
+
+.advantages__item:hover  h3,
+.advantages__item:hover  p {
+  color: $white;
+}
+
+.advantages__item svg {
+  fill: $main-color;
+}
+
+.advantages__item:hover svg {
+  fill: $white;
+}
+
+@media (max-width: 1023px) {
+  .advantages {
+    padding-top: 54px;
+  }
+
+  .advantages__wrapper {
+    padding: 0 25px;
+  }
+
+  .advantages__item {
+    min-height: 230px;
+    width: 48%;
+    padding-left: 27px;
+    padding-top: 24px;
+    padding-right: 17px;
+  }
+
+  .advantages__watch {
+    width: 29px;
+    height: 36px;
+  }
+
+  .advantages__hired {
+    width: 32px;
+    height: 32px;
+  }
+
+  .advantages__detective {
+    width: 30px;
+    height: 26px;
+  }
+
+  .advantages__tag {
+    width: 32px;
+    height: 32px;
+  }
+
+  .advantages h3 {
+    margin-top: 14px;
+  }
+
+  .advantages p  {
+    padding-bottom: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    padding-top: 37px;
+  }
+
+  .advantages__wrapper {
+    padding: 0 15px;
+  }
+
+  .advantages__item {
+    width: 100%;
+    min-height: 232px;
+    padding-top: 25px;
+    padding-left: 27px;
+    padding-right: 8px;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .advantages h3 {
+    font-size: $font-size + 4;
+    line-height: $font-size + 12;
+    margin-top: 14px;
+  }
+
+  .advantages p {
+    margin-top: 16px;
+  }
+}
