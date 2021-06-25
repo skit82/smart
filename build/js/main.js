@@ -89,8 +89,17 @@
     });
   }
 
-  $(document).ready(function() {
-    $("#callform-phone").mask("+7(999)999-99-99");
-    $("#ask-phone").mask("+7(999)999-99-99");
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      pageBody.classList.remove('overlay');
+      headerMenu.classList.remove('main-nav--active');
+      header.style.marginTop = '0';
+      headerButton.classList.remove('page-header__button--active');
+      headerButtonToggle.classList.remove('page-header__block--active');
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
   });
 })();

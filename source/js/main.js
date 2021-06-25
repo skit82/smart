@@ -92,11 +92,6 @@
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      pageBody.classList.remove('overlay');
-      headerMenu.classList.remove('main-nav--active');
-      header.style.marginTop = '0';
-      headerButton.classList.remove('page-header__button--active');
-      headerButtonToggle.classList.remove('page-header__block--active');
       document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: 'smooth'
       });
