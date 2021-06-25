@@ -1,14 +1,14 @@
 .page-header {
   min-height: 878px;
-  background: url("../img/circuit-desktop@1x.png") calc(50% + 440px) 258px no-repeat,
-  url("../img/trangles-top.svg") calc(50% + 9px) no-repeat,
+  background: url("../img/circuit-desktop@1x.png") calc(50% + 430px) 258px no-repeat,
+  url("../img/trangles-top.svg") calc(50% + 2px) no-repeat,
   url("../img/bg-desktop@1x.png") center no-repeat, #1b2d37;
   overflow: hidden;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     min-height: 878px;
-    background: url("../img/circuit-desktop@2x.png") calc(50% + 440px) 258px no-repeat,
-    url("../img/trangles-top.svg") calc(50% + 9px) no-repeat,
+    background: url("../img/circuit-desktop@2x.png") calc(50% + 430px) 258px no-repeat,
+    url("../img/trangles-top.svg") calc(50% + 2px) no-repeat,
     url("../img/bg-desktop@2x.png") center no-repeat, #1b2d37;
     background-size: 705px 515px, auto, cover;
   }
@@ -37,18 +37,18 @@
 }
 
 .page-header__footer {
-  padding-top: 230px;
+  padding-top: 240px;
 }
 
 .page-header__footer h2 {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
   padding: 0;
   font-family: $font-family;
   font-size: $font-size--h2;
   font-weight: 700;
   line-height: $font-size--h2 + 14px;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.063em;
   text-transform: uppercase;
   color: $white;
 }
@@ -62,7 +62,7 @@
 .page-header__footer p {
   position: relative;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 44px;
   padding-left: 94px;
   font-family: $font-family-mono;
   font-weight: 400;
@@ -88,7 +88,7 @@
   font-size: $font-size;
   line-height: $font-size + 3;
   text-align: center;
-  margin-left: 98px;
+  margin-left: 94px;
   padding: 18px 0;
   background-color: $main-color;
   width: 407px;
@@ -107,7 +107,7 @@
   display: inline-block;
   vertical-align: middle;
   transform: rotate(-90deg);
-  margin-left: -34px;
+  margin-left: -40px;
   margin-top: 132px;
   font-family: $font-family-mono;
   font-weight: 400;
@@ -151,35 +151,36 @@
   }
 
   .page-header__top {
-    padding-top: 20px;
+    padding-top: 19px;
   }
 
   .page-header__footer {
-    padding-top: 116px;
-    margin-left: 56px;
+    padding-top: 113px;
+    margin-left: 65px;
     width: calc(25% + 215px);
   }
 
   .page-header__footer h2 {
     font-size: $font-size--h2 - 20px;
     line-height: $font-size--h2 - 10px;
-    margin-bottom: 32px;
+    margin-bottom: 29px;
   }
 
   .page-header__footer p {
-    padding-left: 60px;
+    padding-left: 50px;
     font-size: $font-size + 2px;
     line-height: $font-size + 12px;
+    margin-bottom: 55px;
 
     &::before {
       width: 33px;
-      left: 11px;
-      top: 13px;
+      left: 2px;
+      top: 16px;
     }
   }
 
   .page-header__footer-link {
-    margin-left: 60px;
+    margin-left: 49px;
     width: 379px;
   }
 
@@ -195,12 +196,12 @@
 @media (max-width: 767px) {
   .page-header {
     min-height: 647px;
-    background: url("../img/circuit-mobile@1x.png") calc(100% + 5px) 90px no-repeat, url("../img/trangles-top-mobile.svg") calc(100%) -3px no-repeat, url("../img/bg-mobile@1x.png") center no-repeat, #1b2d37;
+    background: url("../img/circuit-mobile@1x.png") calc(100% + 5px) 90px no-repeat, url("../img/trangles-top-mobile.svg") calc(100%) -1px no-repeat, url("../img/bg-mobile@1x.png") center no-repeat, #1b2d37;
     background-size: 301px, auto, cover;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       min-height: 647px;
-      background: url("../img/circuit-mobile@2x.png") calc(100% + 5px) 90px no-repeat, url("../img/trangles-top-mobile.svg") calc(100%) -3px no-repeat, url("../img/bg-mobile@2x.png") center no-repeat, #1b2d37;
+      background: url("../img/circuit-mobile@2x.png") calc(100% + 5px) 90px no-repeat, url("../img/trangles-top-mobile.svg") calc(100%) -1px no-repeat, url("../img/bg-mobile@2x.png") center no-repeat, #1b2d37;
       background-size: 301px 220px, auto, cover;
     }
   }
@@ -210,7 +211,7 @@
   }
 
   .page-header__top {
-    padding-top: 17px;
+    padding-top: 10px;
     min-height: 71px;
   }
 
@@ -220,25 +221,26 @@
   }
 
   .page-header__footer {
-    padding-top: 207px;
+    padding-top: 210px;
     margin-left: 0;
   }
 
   .page-header__footer h2 {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     font-size: $font-size--h3 + 18px;
     line-height: $font-size--h3 + 25px;
   }
 
   .page-header__footer p {
     padding-left: 50px;
+    margin-bottom: 40px;
     font-size: $font-size;
     line-height: $font-size + 9px;
 
     &::before {
       width: 33px;
       left: 3px;
-      top: 18px;
+      top: 15px;
     }
   }
 

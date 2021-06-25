@@ -1,0 +1,145 @@
+.about {
+  padding-top: 78px;
+  padding-bottom: 90px;
+}
+
+.about__wrapper {
+  max-width: 1198px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &--box {
+    min-height: 327px;
+    padding-left: 195px;
+    background: url("../img/2005-desktop@1x.png") -15px 5px no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      min-height: 327px;
+      padding-left: 195px;
+      background: url("../img/2005-desktop@2x.png") -15px 5px no-repeat;
+      background-size: 220px 317px;
+    }
+  }
+}
+
+.about h2 {
+  font-family: $font-family;
+  font-size: $font-size--h3 + 14px;
+  line-height: $font-size--h3 + 29px;
+  font-weight: 400;
+  color: #666666;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-family: $font-family-mono;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $font-size + 6;
+  color: #666666;
+  margin: 0px;
+  margin-bottom: 22px;
+}
+.about__button {
+  display: block;
+  cursor: pointer;
+  font-family: $font-family;
+  font-weight: bold;
+  font-size: $font-size--middle;
+  line-height: $font-size--middle + 2px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $main-color;
+  width: 180px;
+  padding: 13.5px 0;
+  border: 1px solid $main-color;
+  border-radius: 5px;
+  margin-top: 40px;
+
+  &:hover {
+    border-color: royalblue;
+    color: royalblue;
+  }
+}
+
+.about__dots {
+  visibility: hidden;
+}
+
+@media (max-width: 1023px) {
+  .about {
+    padding-top: 28px;
+    padding-bottom: 123px;
+  }
+
+  .about__wrapper {
+    padding: 0 25px;
+
+    &--box {
+      padding-left: 212px;
+      background: url("../img/2005-tablet@1x.png") left -2px no-repeat;
+      min-height: 360px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        padding-left: 212px;
+        background: url("../img/2005-tablet@2x.png") left -2px no-repeat;
+        background-size: 244px 362px;
+        min-height: 360px;
+      }
+    }
+  }
+
+  .about h2 {
+    font-size: $font-size--h3 + 10px;
+    line-height: $font-size--h3 + 23px;
+    margin-bottom: 24px;
+  }
+
+  .about p {
+    margin-bottom: 21px;
+  }
+
+  .about__button {
+    width: 181px;
+    margin-top: 43px;
+  }
+
+  .about__dots {
+    visibility: visible;
+  }
+
+  .about__hide {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding-top: 39px;
+    padding-bottom: 65px;
+  }
+
+  .about__wrapper {
+    padding: 0 15px;
+
+    &--box {
+      background: 0 0;
+    }
+  }
+
+  .about h2 {
+    margin-bottom: 21px;
+    font-size: $font-size--h3 + 6px;
+    line-height: $font-size--h3 + 17px;
+  }
+
+  .about p {
+    margin-bottom: 42px;
+  }
+
+  .about__button {
+    margin-top: -11px;
+  }
+}

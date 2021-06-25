@@ -43,7 +43,246 @@
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin: 50px 0 0 0;
+  margin: 45px 0 0 0;
   width: 127px;
   align-items: center;
+}
+
+.page-footer__social-item {
+  margin-right: 15px;
+}
+
+.page-footer__social-icon {
+  fill: #cdcdcd;
+
+  &:hover {
+    fill: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.page-footer__section {
+  &--menu {
+    min-width: 316px;
+    margin-bottom: 20px;
+    margin-right: -23px;
+  }
+
+  &--contact {
+    min-width: 316px;
+  }
+}
+
+.page-footer__section-list-item {
+  display: block;
+  margin-right: 74px;
+}
+
+.page-footer__section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-footer__section-title h2 {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: $font-size - 1px;
+  line-height: $font-size;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1b2d37;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.page-footer__section-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: $font-family-mono;
+  color: rgba(27,45,55,.5);
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.page-footer__section-list a {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b2d37;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.page-footer__section-list-column {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.page-footer__button {
+  font-size: 0;
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .page-footer {
+    min-height: 457px;
+    overflow: hidden;
+
+    &::before {
+      top: 97px;
+    }
+  }
+
+  .page-footer__wrapper {
+    width: 100%;
+    padding-top: 19px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .page-footer__section-title h2 {
+    margin-bottom: 25px;
+  }
+
+  .page-footer__logo {
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 0;
+    margin-bottom: -24px;
+    padding-left: 0;
+
+    &::after {
+      position: absolute;
+      content: "1999-2018 SD Service Devices";
+      font-family: "PT Mono", "Arial", sans-serif;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 24px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #1b2d37;
+      opacity: 0.5;
+      width: 233px;
+      top: 29px;
+      left: 58.2%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .page-footer__social {
+    margin-top: 2px;
+    max-height: 55px;
+    width: 112px;
+    flex-wrap: wrap;
+  }
+
+  .page-footer__social-item {
+    margin-right: 0;
+  }
+
+  .page-footer__section--menu {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  .page-footer__section--contact {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-footer__section--contact {
+    margin-right: 0;
+  }
+
+  .page-footer {
+    overflow-x: hidden;
+
+    &::before {
+      top: 210px;
+    }
+  }
+
+  .page-footer__wrapper {
+    padding-top: 46px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .page-footer__logo {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 170px;
+    margin-bottom: 75px;
+
+    &::after {
+      top: 90px;
+      left: 50%;
+    }
+  }
+
+  .page-footer__section {
+    min-width: 290px;
+    width: 100%;
+    margin-bottom: 44px;
+    min-height: 0;
+  }
+
+  .page-footer__section-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__section-title h2 {
+    position: relative;
+    margin: 0;
+    margin-bottom: 12px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 250vh;
+      height: 1px;
+      background-color: #626962;
+      top: -30px;
+      left: -10vh;
+      opacity: .2;
+    }
+  }
+
+  .page-footer__button {
+    display: block;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    background: url(../img/icon-plus.svg) center no-repeat;
+    background-color: #fff;
+    border: 0;
+
+    &--active {
+      background: url(../img/icon-minus.svg) center no-repeat;
+    }
+  }
+
+  .page-footer__section--contact h2 {
+    margin-bottom: 32px;
+  }
+
+  .page-footer__section--contact li {
+    margin-right: 10px;
+  }
+
+  .page-footer__section .page-footer__list-disable {
+    display: none;
+  }
 }

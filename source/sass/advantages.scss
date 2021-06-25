@@ -27,9 +27,9 @@
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
   margin-bottom: 30px;
-  padding-left: 45px;
+  padding-left: 42px;
   padding-right: 43px;
-  padding-top: 35px;
+  padding-top: 42px;
   background-color: $white;
 
   &:hover {
@@ -45,7 +45,7 @@
   font-weight: 400;
   color: $main-color;
   margin: 0;
-  margin-top: 23px;
+  margin-top: 20px;
 }
 
 .advantages p {
@@ -85,9 +85,9 @@
   .advantages__item {
     min-height: 230px;
     width: 48%;
-    padding-left: 27px;
+    padding-left: 25px;
     padding-top: 24px;
-    padding-right: 17px;
+    padding-right: 20px;
   }
 
   .advantages__watch {
@@ -111,11 +111,13 @@
   }
 
   .advantages h3 {
-    margin-top: 14px;
+    margin-top: 9px;
   }
 
   .advantages p  {
-    padding-bottom: 13px;
+    line-height: 21px;
+    margin-top: 13px;
+    padding-bottom: 27px;
   }
 }
 
@@ -131,9 +133,9 @@
   .advantages__item {
     width: 100%;
     min-height: 232px;
-    padding-top: 25px;
-    padding-left: 27px;
-    padding-right: 8px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 13px;
     margin-bottom: 20px;
     max-width: 100%;
   }
@@ -141,10 +143,12 @@
   .advantages h3 {
     font-size: $font-size + 4;
     line-height: $font-size + 12;
-    margin-top: 14px;
+    margin-top: 12px;
   }
 
   .advantages p {
-    margin-top: 16px;
+    line-height: 22px;
+    margin-top: 9px;
+    padding-bottom: 28px;
   }
 }

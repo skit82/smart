@@ -1,0 +1,216 @@
+.callform {
+  z-index: 9;
+  display: none;
+  width: 490px;
+  height: 605px;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.callform-wrapper-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.callfrom__active {
+  display: block;
+}
+
+.callform form {
+  width: 100%;
+  margin: 0;
+  padding: 33px 39px 36px;
+  background-color: #00b2ff;
+}
+
+.callform input {
+  width: 100%;
+  height: 52px;
+  margin-bottom: 30px;
+  font-family: $font-family-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  padding: 14px 16.4px;
+  background: rgba(255,255,255,.1);
+}
+
+.callform textarea {
+  width: 100%;
+  resize: none;
+  height: 104px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: $font-family-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  background: rgba(255,255,255,.1);
+  border: 0;
+  border-radius: 2px;
+  padding: 13px 16.4px;
+  color: $white;
+}
+
+.callform button[type="submit"] {
+  width: 100%;
+  height: 45px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: $white;
+  padding: 14px 0;
+  background: #00b2ff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-family: $font-family;
+  line-height: 16px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 34px;
+
+  &:hover {
+    border-color: #4169e1;
+    color: #4169e1;
+  }
+}
+
+.callform h2 {
+  font-family: $font-family;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 28px;
+  line-height: 39px;
+  color: $white;
+}
+
+.callform p {
+  margin: 0;
+  margin-bottom: 30px;
+  width: 95%;
+  font-family: $font-family-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.callform input[type="checkbox"] + label {
+  width: 339px;
+  position: relative;
+  display: block;
+  font-family: $font-family-mono;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: .8;
+  padding-left: 36px;
+  margin-bottom: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+  }
+}
+
+.callform input[type="checkbox"]:checked + label {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 7.5px;
+    height: 4.5px;
+    background: url(../img/icon-tick.svg) center no-repeat;
+    cursor: pointer;
+    left: 5px;
+    top: 5px;
+  }
+}
+
+.callform input[id="call-confirm"] + label {
+  padding-top: 0;
+}
+
+.callform__close {
+  position: absolute;
+  width: 16.56px;
+  height: 16.56px;
+  border: none;
+  background: url("../img/icon-cross.svg") center no-repeat;
+  background-color: $main-color;
+  cursor: pointer;
+  left: 450px;
+  top: 20px;
+  font-size: 0;
+}
+
+.callform__active {
+  display: block;
+}
+
+.form-wrapper--callform label {
+  top: 0;
+  left: 0;
+}
+
+.body__overflow {
+  overflow-y: hidden;
+}
+
+.mask {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.mask-active {
+  display: block;
+}
+
+form label {
+  position: absolute;
+  top: -6000px;
+  left: -6000px;
+}
+
+.form-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+form input[type=checkbox] {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  padding-left: 34px;
+}
+
+form input:hover {
+  background: rgba(255,255,255,.2);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
