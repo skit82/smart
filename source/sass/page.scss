@@ -1,0 +1,21 @@
+.page {
+  height: 100%;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page-header {
+  flex: 0 0 auto;
+}
+
+.page-main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  flex: 0 0 auto;
+}

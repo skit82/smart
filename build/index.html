@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
   <link rel="preload" href="fonts/ptmono-regular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="page-body">
   <svg style="display: none">
     <symbol id="icon-email" viewBox="0 0 19 14">
       <path d="M16.68 0H2.323C1.042 0 0 1.009 0 2.25v9.5C0 12.991 1.042 14 2.323 14h14.354C17.958 14 19 12.991 19 11.75V2.253C19.004 1.013 17.962 0 16.68 0zm1.262 11.75c0 .674-.566 1.222-1.262 1.222H2.323c-.695 0-1.262-.548-1.262-1.222V2.253c0-.673.567-1.221 1.262-1.221h14.354c.695 0 1.262.548 1.262 1.221v9.497h.003z" fill="#00B2FF"></path><path d="M11.983 6.882l4.646-4.035a.505.505 0 00.04-.727.546.546 0 00-.751-.038L9.51 7.651 8.26 6.57c-.004-.004-.008-.008-.008-.012a.78.78 0 00-.087-.072L3.078 2.078a.542.542 0 00-.75.042.502.502 0 00.043.727l4.702 4.07L2.39 11.16a.504.504 0 00-.023.727.541.541 0 00.75.027l4.754-4.305L9.16 8.724a.54.54 0 00.708-.004l1.325-1.15 4.725 4.348c.102.095.236.14.366.14.141 0 .279-.053.385-.16a.504.504 0 00-.02-.726l-4.666-4.29z" fill="#00B2FF"></path>
@@ -71,7 +71,9 @@
               </a>
             </li>
             <li class="contact__item">
-              <button class="contact__button" type="submit">Заказать звонок</button>
+              <button class="contact__button" type="button">
+                Заказать звонок
+              </button>
             </li>
           </ul>
         </div>
@@ -93,7 +95,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="page-main">
     <section class="advantages" id="advantages">
       <div class="advantages__wrapper">
         <h2 class="visually-hidden">
@@ -155,7 +157,7 @@
         <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
         </p>
         <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
-        платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about__dots">..</span> <span class="about__hide">(РЖД),
+        платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about__dots">..</span><span class="about__hide">(РЖД),
         РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
         светотехники России.</span>
         </p>
@@ -272,50 +274,84 @@
         <div class="page-footer__section page-footer__section--menu">
           <div class="page-footer__section-title">
             <h2>Разделы сайта</h2>
-            <button class="page-footer__button page-footer__button--active" type="submit">Показать или скрыть блок</button>
+            <button class="page-footer__button page-footer__button--active" type="button">
+              Показать или скрыть блок
+            </button>
           </div>
           <div class="page-footer__section-wrapper page-footer__list-hide">
             <ul class="page-footer__section-list page-footer__section-list-column">
-              <li class="page-footer__section-list-item"><a href="#">О компании</a></li>
-              <li class="page-footer__section-list-item"><a href="#">Продукты</a></li>
-              <li class="page-footer__section-list-item"><a href="#">Производство печатных плат</a></li>
-              <li class="page-footer__section-list-item"><a href="#">Монтаж печатных плат</a></li>
+              <li class="page-footer__section-list-item">
+                <a href="#">О компании</a>
+              </li>
+              <li class="page-footer__section-list-item">
+                <a href="#">Продукты</a>
+              </li>
+              <li class="page-footer__section-list-item">
+                <a href="#">Производство печатных плат</a>
+              </li>
+              <li class="page-footer__section-list-item">
+                <a href="#">Монтаж печатных плат</a>
+              </li>
             </ul>
             <ul class="page-footer__section-list page-footer__section-list-column">
-              <li class="page-footer__section-list-item"><a href="#">Комплектующие</a></li>
-              <li class="page-footer__section-list-item"><a href="#">Доставка</a></li>
-              <li class="page-footer__section-list-item"><a href="#">Контакты</a></li>
+              <li class="page-footer__section-list-item">
+                <a href="#">Комплектующие</a>
+              </li>
+              <li class="page-footer__section-list-item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="page-footer__section-list-item">
+                <a href="#">Контакты</a>
+              </li>
             </ul>
           </div>
         </div>
         <div class="page-footer__section page-footer__section--contact">
           <div class="page-footer__section-title">
             <h2>Наш офис</h2>
-            <button class="page-footer__button page-footer__button--active" type="submit">Показать или скрыть блок</button>
+            <button class="page-footer__button page-footer__button--active" type="button">
+              Показать или скрыть блок
+            </button>
           </div>
           <ul class="page-footer__section-list page-footer__section-list-column page-footer__list-hide">
-            <li><a href="#">. Мытищи, Олимпийский проспект, д.10</a></li>
-            <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
-            <li><a href="tel:+79250038767">+7 (925) 003-87-67</a></li>
-            <li><a href="tel:+79269260807">+7 (926) 926-080-79</a></li>
+            <li>
+              . Мытищи, Олимпийский проспект, д.10
+            </li>
+            <li>
+              <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+            </li>
+            <li>
+              <a href="tel:+79250038767">+7 (925) 003-87-67</a>
+            </li>
+            <li>
+              <a href="tel:+79269260807">+7 (926) 926-080-79</a>
+            </li>
           </ul>
         </div>
       </div>
       <div class="copyright">
         <ul class="copyright__list copyright__list-box">
-          <li class="copyright__item copyright__item--one"><a href="#">Все права защищеныБ</a></li>
-          <li class="copyright__item copyright__item--two"><a href="#">1999-2018 SD Service Devices</a></li>
+          <li class="copyright__item copyright__item--one">
+            Все права защищены
+          </li>
+          <li class="copyright__item copyright__item--two">
+            1999-2018 SD Service Devices
+          </li>
           <li class="copyright__item copyright__item--three">
             <a href="#">Условия конфиденциальности</a>
           </li>
-          <li class="copyright__item"><a href="#">Developed by wow studio</a></li>
+          <li class="copyright__item">
+            Developed by wow studio
+          </li>
         </ul>
       </div>
     </div>
   </footer>
   <div class="mask"></div>
   <div class="callform">
-    <button class="callform__close" type="submit">Закрыть</button>
+    <button class="callform__close" type="button">
+      Закрыть
+    </button>
     <form action="https://echo.htmlacademy.ru" method="POST" autocomplete="off">
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
