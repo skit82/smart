@@ -27,7 +27,7 @@
   flex-wrap: wrap;
   align-items: center;
   // height: 52px;
-  height: 76px;
+  min-height: 76px;
 }
 
 .page-header__logo {
@@ -38,6 +38,7 @@
 
 .page-header__footer {
   padding-top: 240px;
+  padding-bottom: 100px;
 }
 
 .page-header__footer h2 {
@@ -131,7 +132,7 @@
   .page-header {
     min-height: 686px;
     background: url("../img/circuit-tablet@1x.png") calc(100% + 0px) 114px no-repeat, url("../img/trangles-top-tablet.svg") calc(100%) 0 no-repeat, url("../img/bg-tablet@1x.png") center no-repeat, #1b2d37;
-    background-size: 465px, auto, cover;
+    background-size: 260px 340px, auto, cover;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       min-height: 686px;
@@ -222,6 +223,7 @@
 
   .page-header__footer {
     padding-top: 210px;
+    padding-bottom: 50px;
     margin-left: 0;
   }
 

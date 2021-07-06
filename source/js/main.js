@@ -61,6 +61,14 @@
       removeClass(pageMask, 'mask-active');
     })
 
+    if (pageMask) {
+      pageMask.addEventListener('click', function () {
+        removeClass(popupForm, 'callform__active');
+        removeClass(body, 'body__overflow');
+        removeClass(pageMask, 'mask-active');
+      })
+    }
+
     document.addEventListener('keydown', function (evt) {
       if (evt.key === 'Escape') {
         removeClass(popupForm, 'callform__active');
@@ -97,4 +105,9 @@
       });
     });
   });
+
+  jQuery(function($) {
+    $("#callform-phone").mask("+7(999)999-99-99");
+    $("#ask-phone").mask("+7(999)999-99-99");
+ });
 })();

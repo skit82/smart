@@ -25,7 +25,7 @@
 .page-footer__header {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .page-footer__logo {
@@ -41,6 +41,7 @@
 .page-footer__social {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 45px 0 0 0;
@@ -147,6 +148,10 @@
     padding-right: 25px;
   }
 
+  .page-footer__header {
+    flex-wrap: wrap;
+  }
+
   .page-footer__section-title h2 {
     margin-bottom: 25px;
   }
@@ -186,7 +191,7 @@
   }
 
   .page-footer__social-item {
-    margin-right: 0;
+    margin-right: 5px;
   }
 
   .page-footer__section--menu {

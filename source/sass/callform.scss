@@ -114,6 +114,7 @@
   opacity: .8;
   padding-left: 36px;
   margin-bottom: 0;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -125,6 +126,14 @@
     left: 0;
     top: 0;
   }
+}
+
+.callform input[type="checkbox"]:focus + label::before {
+  border: solid 1px cyan;
+}
+
+.callform input[type="checkbox"]:hover + label::before {
+  border-color: #4169e1;
 }
 
 .callform input[type="checkbox"]:checked + label {
@@ -139,6 +148,8 @@
     top: 5px;
   }
 }
+
+
 
 .callform input[id="call-confirm"] + label {
   padding-top: 0;
