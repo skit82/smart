@@ -38,6 +38,9 @@
   if (footerListsArray) {
     addClass(footerListsArray[FOOTER_BUTTON_NUMBER], 'page-footer__list-disable');
     removeClass(footerButtonsArray[FOOTER_BUTTON_NUMBER], 'page-footer__button--active');
+  }else if (footerListsArray === FOOTER_BUTTON_NUMBER) {
+      addClass(footerListsArray[FOOTER_BUTTON_NUMBER], 'page-footer__list-disable');
+    removeClass(footerButtonsArray[FOOTER_BUTTON_NUMBER], 'page-footer__button--active');
   }
 
   if (contactButton) {
@@ -96,6 +99,7 @@
       });
     });
   }
+
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
