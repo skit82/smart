@@ -265,17 +265,17 @@
     }
   }
 
-  .page-footer__button {
+  .accordion__toggle {
     display: block;
     cursor: pointer;
     width: 16px;
     height: 16px;
-    background: url(../img/icon-plus.svg) center no-repeat;
+    background: url(../img/icon-minus.svg) center no-repeat;
     background-color: #fff;
     border: 0;
 
-    &--active {
-      background: url(../img/icon-minus.svg) center no-repeat;
+    &--inactive {
+      background: url(../img/icon-plus.svg) center no-repeat;
     }
   }
 
@@ -288,6 +288,10 @@
   }
 
   .page-footer__section .page-footer__list-disable {
+    display: none;
+  }
+
+  .accordion__pane--hidden {
     display: none;
   }
 }
